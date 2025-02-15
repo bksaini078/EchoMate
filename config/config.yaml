@@ -1,0 +1,84 @@
+# Virtual Team Member Configuration
+
+# Speech Recognition Settings
+speech:
+  sample_rate: 16000
+  chunk_size: 1024
+  language_codes:
+    English: "en"
+    German: "de"
+    Spanish: "es"
+    French: "fr"
+  whisper_model: "base"
+
+# Text-to-Speech Settings
+tts:
+  default_voice_id: null  # Set your ElevenLabs voice ID here
+  speech_settings:
+    stability: 0.75
+    similarity_boost: 0.75
+    style: 0.0
+    use_speaker_boost: true
+
+# AI Settings
+ai:
+  azure:
+    model: "gpt-4-32k-0613"
+    api_version: "2024-02-01"
+    temperature: 0.7
+    max_tokens: 1000
+  persona:
+    name: "Alex"
+    role: "Technical Advisor"
+    personality_traits:
+      - analytical
+      - supportive
+      - curious
+      - professional
+  search:
+    max_results: 5
+    search_depth: "advanced"
+    exclude_domains: []
+    include_domains: []
+
+# Memory Settings
+memory:
+  vector_db:
+    persist_directory: "chroma_db"
+    distance_metric: "cosine"
+    max_elements: 10000
+  context:
+    max_recent_messages: 10
+    max_references: 5
+    context_window: 1000
+
+# UI Settings
+ui:
+  theme:
+    primary_color: "#2E86C1"
+    secondary_color: "#AED6F1"
+    background_color: "#F5F8FA"
+    text_color: "#2C3E50"
+  layout:
+    transcript_width: 2
+    assistant_width: 2
+    references_width: 1
+  animation:
+    wave_color: "#2E86C1"
+    wave_height: 50
+    wave_speed: 1.0
+
+# Logging Settings
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "app.log"
+  max_size: 10485760  # 10MB
+  backup_count: 5
+
+# Session Settings
+session:
+  auto_save: true
+  save_interval: 300  # 5 minutes
+  max_history: 1000
+  cleanup_interval: 86400  # 24 hours

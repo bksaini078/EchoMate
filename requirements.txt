@@ -1,0 +1,16 @@
+streamlit
+langchain
+langchain-community
+langchain-openai
+chromadb
+python-dotenv
+elevenlabs
+tavily-python
+crewai
+openai
+numpy
+pandas
+sounddevice
+soundfile
+scipy
+openai-whisper
