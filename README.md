@@ -1,4 +1,4 @@
-# Virtual Team Member Assistant
+# EchoMate
 
 A virtual team member that participates in physical meetings by listening to conversations, understanding context, and providing valuable input through speech interaction.
 
